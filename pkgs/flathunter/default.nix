@@ -11,7 +11,8 @@ rustPlatform.buildRustPackage rec {
   src = fetchgit {
     url = "https://codeberg.org/SebRut/flathunter-rust";
     branchName = "main";
-    sha256 = "sha256-lvPEs/vV0Z9bQ0LFiO+Xkt0auUZQk1BQQ1o5k+vMMHE=";
+    rev = "8f4856636af190a3c357a29eb6a232c50de2417c";
+    hash = "sha256-vwTnqF2hZkCu9BQHGja+n0Mkw+q1AS6rrE/0B1RraYg=";
   };
 
   nativeBuildInputs = [ sqlx-cli ];
@@ -22,5 +23,5 @@ rustPlatform.buildRustPackage rec {
     sqlx migrate run --source flathunter/migrations/
   '';
 
-  cargoHash = "sha256-gz1FvW/FYldxm/nSq8Ssuag1B6EE0vBgRFuLImbghgY=";
+  cargoHash = "sha256-oMdKpooIwzkr58i0eWNUKQEmTxSHexndQIzEZnqlaqs=";
 }
