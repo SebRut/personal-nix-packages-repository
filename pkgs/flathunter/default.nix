@@ -1,6 +1,6 @@
 {
   lib,
-  fetchgit,
+  pkgs,
   rustPlatform,
   sqlx-cli,
 }:
@@ -8,7 +8,7 @@ rustPlatform.buildRustPackage rec {
   pname = "flathunter";
   version = "0.1.0";
 
-  src = fetchgit {
+  src = pkgs.fetchgit {
     url = "https://codeberg.org/SebRut/flathunter-rust";
     branchName = "main";
     rev = "8f4856636af190a3c357a29eb6a232c50de2417c";
