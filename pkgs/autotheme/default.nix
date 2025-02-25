@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage rec {
     hash = "sha256-qNwARagXLHOYq5WDofHQuHe/iM8A+VFcsXovMzovUUs=";
   };
 
-  cargoHash = "sha256-GEDv+pQ+9fuIT1gYkf5kgCogKvoCHD6owB82ufXa+uc=";
+  cargoHash = "sha256-gBiI0yjInmkau0EEpI1zbBggino/6G0fayBWP1lnF4A=";
 
   meta = with lib; {
     mainProgram = "autotheme-cli";
