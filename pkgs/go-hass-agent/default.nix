@@ -83,5 +83,6 @@ buildGoModule rec {
     homepage = "https://github.com/joshuar/go-hass-agent";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ sebrut ];
+    mainProgram = "go-hass-agent";
   };
 }
